@@ -14,16 +14,16 @@ import {
 	mongodb,
 	git,
 	figma,
-	docker,
-	meta,
-	starbucks,
-	tesla,
-	shopify,
+	booop,
+	daiwa,
 	carrent,
 	jobit,
 	tripguide,
 	threejs,
-} from '../assets';
+	netflix,
+	uiux,
+	galaxy,
+} from '../assets'
 
 export const navLinks = [
 	{
@@ -38,18 +38,18 @@ export const navLinks = [
 		id: 'contact',
 		title: 'Contact',
 	},
-];
+]
 
 const services = [
 	{
-		title: 'Web Developer',
+		title: 'Frontend Developer',
 		icon: web,
 	},
 	{
-		title: 'Backend Developer',
+		title: 'UI/UX Designer',
 		icon: backend,
 	},
-];
+]
 
 const technologies = [
 	{
@@ -100,158 +100,130 @@ const technologies = [
 		name: 'figma',
 		icon: figma,
 	},
-	{
-		name: 'docker',
-		icon: docker,
-	},
-];
+]
 
 const experiences = [
 	{
-		title: 'React.js Developer',
-		company_name: 'Starbucks',
-		icon: starbucks,
-		iconBg: '#383E56',
-		date: 'March 2020 - April 2021',
-		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
-		],
-	},
-	{
-		title: 'React Native Developer',
-		company_name: 'Tesla',
-		icon: tesla,
+		title: 'Frontend developer',
+		company_name: 'Booop.it',
+		icon: booop,
 		iconBg: '#E6DEDD',
-		date: 'Jan 2021 - Feb 2022',
+		date: 'Jul 2022 - Present',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+			'Developed and maintained two concurrent applications, one for consumers and one for retailers, using React.js and TypeScript, ensuring a seamless and consistent user experience.',
+			'Collaborated closely with backend developers to troubleshoot and help resolve backend-related issues, demonstrating strong communication and problem-solving skills to enhance the overall application performance.',
 			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			'Worked closely with product managers and stakeholders to align development efforts with business goals, ensuring that each feature delivered met user and business requirements.',
+			'Conducted thorough code reviews and implemented best practices in React and TypeScript, eliminating any performance issue and ensuring consistency across the applications.',
 		],
 	},
 	{
-		title: 'Web Developer',
-		company_name: 'Shopify',
-		icon: shopify,
+		title: 'Planning Analyst',
+		company_name: 'Daiwa Food Pty Ltd',
+		icon: 'D',
 		iconBg: '#383E56',
-		date: 'Jan 2022 - Jan 2023',
+		date: 'Oct 2019 - Apr 2022',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			'Responsible for identifying purchase needs and opportunities.',
+			"Identified opportunities through sales data and marketing research to come up with strategies that increased the company's profitability of its online platform by 25% while reducing costs.",
+			'Working collaboratively in a team to figure out the most efficient and effective process of handling multiple projects.',
+			'Prepared reports with a clear and precise goal so that readers can identify key points.',
 		],
 	},
 	{
-		title: 'Full stack Developer',
-		company_name: 'Meta',
-		icon: meta,
+		title: 'Building Surveyor',
+		company_name: 'Code Compliance Pty Ltd',
+		icon: 'C',
 		iconBg: '#E6DEDD',
-		date: 'Jan 2023 - Present',
+		date: 'Feb 2017 - Sept 2019',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			'Communicate thoroughly with project stakeholders to identify a time frame and potential roadblocks to reduce constrain.',
+			'Identify any non-compliant matter through architectural drawings or other associated documentation',
+			'Studying ever-changing state, council and building regulations.',
 		],
 	},
-];
-
-const testimonials = [
 	{
-		testimonial:
-			'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-		name: 'Sara Lee',
-		designation: 'CFO',
-		company: 'Acme Co',
-		image: 'https://randomuser.me/api/portraits/women/4.jpg',
+		title: 'Store Manager',
+		company_name: 'Puck Specialty Coffee',
+		icon: 'P',
+		iconBg: '#383E56',
+		date: 'Jun 2015 - Jul 2018',
+		points: [
+			'Strong time management with the ability to multi-task.',
+			'Solution-focused mindset and highly organized while offering directions to others.',
+			'Placing daily orders with suppliers for the running of the business.',
+			'Focusing on top quality customer service.',
+		],
 	},
-	{
-		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Rick does.",
-		name: 'Chris Brown',
-		designation: 'COO',
-		company: 'DEF Corp',
-		image: 'https://randomuser.me/api/portraits/men/5.jpg',
-	},
-	{
-		testimonial:
-			"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-		name: 'Lisa Wang',
-		designation: 'CTO',
-		company: '456 Enterprises',
-		image: 'https://randomuser.me/api/portraits/women/6.jpg',
-	},
-];
+]
 
 const projects = [
 	{
-		name: 'Car Rent',
+		name: 'Netflix',
 		description:
-			'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+			'Recreated Netflix with React JS, all data is fetched from the movie database API. User can play the trailers if its available in Youtube',
 		tags: [
 			{
-				name: 'react',
+				name: 'React',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'mongodb',
+				name: 'Rest API, Axios',
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'tailwind',
+				name: 'CSS',
 				color: 'pink-text-gradient',
 			},
 		],
-		image: carrent,
-		source_code_link: 'https://github.com/',
+		image: netflix,
+		source_code_link: 'https://github.com/ReikoOchiai/NetflixClone',
 	},
 	{
 		name: 'Job IT',
-		description:
-			'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+		description: 'Fully responsive website for GPT-3',
 		tags: [
 			{
-				name: 'react',
+				name: 'React',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'restapi',
+				name: 'Firebase',
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'scss',
+				name: 'CSS',
 				color: 'pink-text-gradient',
 			},
 		],
-		image: jobit,
-		source_code_link: 'https://github.com/',
+		image: uiux,
+		source_code_link: 'https://github.com/ReikoOchiai/ui-ux-website',
 	},
 	{
-		name: 'Trip Guide',
-		description:
-			'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+		name: '3D Galaxy',
+		description: 'User can create their own 3D Galaxy',
 		tags: [
 			{
-				name: 'nextjs',
+				name: 'Three.js',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'supabase',
+				name: 'HTML',
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'css',
+				name: 'CSS',
 				color: 'pink-text-gradient',
 			},
 		],
-		image: tripguide,
-		source_code_link: 'https://github.com/',
+		image: galaxy,
+		source_code_link: 'https://github.com/ReikoOchiai/Galaxy-generator',
 	},
-];
+]
 
-export { services, technologies, experiences, testimonials, projects };
+const languages = [
+	{ label: 'Japanese', code: 'jp' },
+	{ label: 'English', code: 'en' },
+]
+
+export { services, technologies, experiences, projects, languages }

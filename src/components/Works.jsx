@@ -1,11 +1,11 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { fadeIn, textVariant } from '../utils/motion';
-import { github } from '../assets';
-import { styles } from '../styles';
-import { projects } from '../constants';
-import { SectionWrapper } from '../hoc';
-import Tilt from 'react-tilt';
+import React from 'react'
+import { motion } from 'framer-motion'
+import { fadeIn, textVariant } from '../utils/motion'
+import { github } from '../assets'
+import { styles } from '../styles'
+import { projects } from '../constants'
+import { SectionWrapper } from '../hoc'
+import Tilt from 'react-parallax-tilt'
 const ProjectCard = ({
 	index,
 	name,
@@ -26,7 +26,7 @@ const ProjectCard = ({
 						className="w-full h-full object-cover rounded-2xl"
 					/>
 					<div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-						<div
+						<button
 							onClick={() => window.open(source_code_link, '_blank')}
 							className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
 							<img
@@ -34,7 +34,7 @@ const ProjectCard = ({
 								alt="github"
 								className="w-1/2 h-1/2 object-contain"
 							/>
-						</div>
+						</button>
 					</div>
 				</div>
 
@@ -52,16 +52,16 @@ const ProjectCard = ({
 				</div>
 			</Tilt>
 		</motion.div>
-	);
-};
+	)
+}
 
 const Works = () => {
 	return (
 		<>
-			<motion.dev variant={textVariant()}>
+			<motion.div variant={textVariant()}>
 				<p className={styles.sectionSubText}>My work</p>
 				<h2 className={styles.sectionHeadText}>Projects.</h2>
-			</motion.dev>
+			</motion.div>
 			<div className="w-full flex">
 				<motion.p
 					variants={fadeIn('', '', 0.1, 1)}
@@ -79,7 +79,7 @@ const Works = () => {
 				))}
 			</div>
 		</>
-	);
-};
+	)
+}
 
-export default SectionWrapper(Works, 'work');
+export default SectionWrapper(Works, 'work')

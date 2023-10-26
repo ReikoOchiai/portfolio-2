@@ -1,10 +1,10 @@
-import { motion } from 'framer-motion';
-import React from 'react';
-import { styles } from '../styles';
-import { fadeIn, textVariant } from '../utils/motion';
-import Tilt from 'react-tilt';
-import { services } from '../constants';
-import { SectionWrapper } from '../hoc';
+import { motion } from 'framer-motion'
+import React from 'react'
+import { styles } from '../styles'
+import { fadeIn, textVariant } from '../utils/motion'
+import Tilt from 'react-parallax-tilt'
+import { services } from '../constants'
+import { SectionWrapper } from '../hoc'
 const ServiceCard = ({ index, title, icon }) => {
 	return (
 		<Tilt className="xs:w-[250px] w-full">
@@ -21,15 +21,15 @@ const ServiceCard = ({ index, title, icon }) => {
 				</div>
 			</motion.div>
 		</Tilt>
-	);
-};
+	)
+}
 function About() {
 	return (
 		<>
-			<motion.dev variants={textVariant()}>
+			<motion.div variants={textVariant()}>
 				<p className={styles.sectionSubText}>Introduction</p>
 				<h2 className={styles.sectionHeadText}>Overview.</h2>
-			</motion.dev>
+			</motion.div>
 			<motion.p
 				variants={fadeIn('', '', 0.1, 1)}
 				className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
@@ -47,7 +47,7 @@ function About() {
 				))}
 			</div>
 		</>
-	);
+	)
 }
 
-export default SectionWrapper(About, 'about');
+export default SectionWrapper(About, 'about')

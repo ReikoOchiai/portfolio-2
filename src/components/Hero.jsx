@@ -1,8 +1,11 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ComputersCanvas } from './canvas';
-import { styles } from '../styles';
+import React from 'react'
+import { motion } from 'framer-motion'
+import { ComputersCanvas } from './canvas'
+import { styles } from '../styles'
+import { useTranslation } from 'react-i18next'
+
 function Hero() {
+	const { t } = useTranslation()
 	return (
 		<section className="relative w-full h-screen mx-auto">
 			{' '}
@@ -17,8 +20,8 @@ function Hero() {
 						Hi, I'm <span className="text-[#915eff]">Reiko</span>
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
-						I develop 3D visuals, user <br className="sm:block hidden" />
-						interfaces and web applications
+						I develop 3D visuals, <br className="sm:block hidden" />
+						user interfaces and web applications
 					</p>
 				</div>
 			</div>
@@ -26,7 +29,7 @@ function Hero() {
 			<div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
 				<a href="#about">
 					<div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-						<motion.dev
+						<motion.div
 							animate={{ y: [0, 24, 0] }}
 							transition={{
 								duration: 1.5,
@@ -39,7 +42,7 @@ function Hero() {
 				</a>
 			</div>
 		</section>
-	);
+	)
 }
 
-export default Hero;
+export default Hero
