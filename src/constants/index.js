@@ -17,7 +17,6 @@ import {
 	booop,
 	daiwa,
 	carrent,
-	jobit,
 	tripguide,
 	threejs,
 	netflix,
