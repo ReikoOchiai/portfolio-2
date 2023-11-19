@@ -69,8 +69,8 @@ const Cursor = () => {
 				className={`absolute z-100 -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none transition-transform
         ${
 					hoverButton
-						? 'bg-transparent border-2 border-pink-900 w-5 h-5'
-						: 'bg-pink-500 w-3 h-3'
+						? 'bg-transparent border-2 white-900 w-5 h-5'
+						: 'bg-white w-3 h-3'
 				}`}
 				ref={cursorOutline}></div>
 		</>

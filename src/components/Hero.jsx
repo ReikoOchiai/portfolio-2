@@ -20,8 +20,8 @@ function Hero() {
 						Hi, I'm <span className="text-[#915eff]">Reiko</span>
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
-						I develop 3D visuals, <br className="sm:block hidden" />
-						user interfaces and web applications
+						UI/UX designer and <br className="sm:block hidden" />
+						front-end developer
 					</p>
 				</div>
 			</div>
