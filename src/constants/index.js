@@ -179,7 +179,7 @@ const projects = [
 		source_code_link: 'https://github.com/ReikoOchiai/NetflixClone',
 	},
 	{
-		name: 'Job IT',
+		name: 'GPT-3',
 		description: 'Fully responsive website for GPT-3',
 		tags: [
 			{
