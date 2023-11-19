@@ -61,7 +61,6 @@ export {
 	starbucks,
 	tesla,
 	carrent,
-	jobit,
 	tripguide,
 	netflix,
 	uiux,
