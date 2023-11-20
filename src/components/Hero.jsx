@@ -4,6 +4,7 @@ import { ComputersCanvas } from './canvas'
 import { styles } from '../styles'
 import { useTranslation } from 'react-i18next'
 
+
 function Hero() {
 	const { t } = useTranslation()
 	return (
@@ -16,12 +17,12 @@ function Hero() {
 					<div className="w-1 sm:h-80 h-40 violet-gradient" />
 				</div>
 				<div>
-					<h1 className={`${styles.heroHeadText} text-white`}>
+					<h1 className={`${styles.heroHeadText} text-white relative`}>
 						Hi, I'm <span className="text-[#915eff]">Reiko</span>
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
-						UI/UX designer and <br className="sm:block hidden" />
-						front-end developer
+						Front-end developer and <br className="sm:block hidden" />
+						UI/UX designer
 					</p>
 				</div>
 			</div>

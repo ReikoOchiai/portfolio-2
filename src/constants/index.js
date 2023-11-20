@@ -177,6 +177,7 @@ const projects = [
 		],
 		image: netflix,
 		source_code_link: 'https://github.com/ReikoOchiai/NetflixClone',
+		url: 'https://netflix-clone-6a31c.web.app/',
 	},
 	{
 		name: 'GPT-3',
@@ -197,6 +198,7 @@ const projects = [
 		],
 		image: uiux,
 		source_code_link: 'https://github.com/ReikoOchiai/ui-ux-website',
+		url: 'https://ui-ux-website.web.app/',
 	},
 	{
 		name: '3D Galaxy',
@@ -217,6 +219,7 @@ const projects = [
 		],
 		image: galaxy,
 		source_code_link: 'https://github.com/ReikoOchiai/Galaxy-generator',
+		url: 'https://galaxy-generator-one.vercel.app/',
 	},
 ]
 
