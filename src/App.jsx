@@ -26,7 +26,7 @@ const App = () => {
 				<Works />
 				<div className="relative z-0">
 					<Contact />
-					<StarsCanvas />
+					{/* <StarsCanvas /> */}
 					<div className="text-[12px] text-center pb-4">
 						&copy; 2023 Reiko Ochiai
 					</div>
