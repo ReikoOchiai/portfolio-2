@@ -32,7 +32,7 @@ const App = () => {
 					</div>
 				</div>
 			</div>
-			<Cursor />
+		<Cursor />
 		</BrowserRouter>
 	)
 }

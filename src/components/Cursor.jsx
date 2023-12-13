@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import useMediaQuery from './customHooks/useMediaQuery'
 
 const CURSOR_SPEED = 0.2
 
@@ -8,6 +9,8 @@ let outlineX = 0
 let outlineY = 0
 
 const Cursor = () => {
+	const isMobile = useMediaQuery()
+
 	const cursorOutline = useRef()
 	const [hoverButton, setHoverButton] = useState(false)
 
@@ -17,10 +20,11 @@ const Cursor = () => {
 
 		outlineX = outlineX + distX * CURSOR_SPEED
 		outlineY = outlineY + distY * CURSOR_SPEED
-
-		cursorOutline.current.style.left = `${outlineX}px`
-		cursorOutline.current.style.top = `${outlineY}px`
-		requestAnimationFrame(animate)
+		if (cursorOutline.current !== null) {
+			cursorOutline.current.style.left = `${outlineX}px`
+			cursorOutline.current.style.top = `${outlineY}px`
+			requestAnimationFrame(animate)
+		}
 	}
 
 	useEffect(() => {
@@ -65,14 +69,18 @@ const Cursor = () => {
 
 	return (
 		<>
-			<div
-				className={`absolute z-100 -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none transition-transform
+			{isMobile ? (
+				<></>
+			) : (
+				<div
+					className={`absolute z-100 -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none transition-transform
         ${
 					hoverButton
 						? 'bg-transparent border-2 white-900 w-5 h-5'
 						: 'bg-white w-3 h-3'
 				}`}
-				ref={cursorOutline}></div>
+					ref={cursorOutline}></div>
+			)}
 		</>
 	)
 }

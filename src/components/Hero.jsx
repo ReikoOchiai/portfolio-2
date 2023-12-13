@@ -3,10 +3,12 @@ import { motion } from 'framer-motion'
 import { ComputersCanvas } from './canvas'
 import { styles } from '../styles'
 import { useTranslation } from 'react-i18next'
-
+import useMediaQuery  from './customHooks/useMediaQuery'
 
 function Hero() {
 	const { t } = useTranslation()
+	const isMobile  = useMediaQuery()
+
 	return (
 		<section className="relative w-full h-screen mx-auto">
 			{' '}

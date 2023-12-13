@@ -29,7 +29,7 @@ const Computers = ({ isMobile }) => {
 }
 
 const ComputersCanvas = () => {
-	const { isMobile } = useMediaQuery()
+	const isMobile  = useMediaQuery()
 	return (
 		<Canvas
 			frameloop="demand"
