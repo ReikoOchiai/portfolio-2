@@ -11,8 +11,10 @@ import {
 	StarsCanvas,
 	Cursor,
 } from './components'
+import useMediaQuery from './components/customHooks/useMediaQuery'
 
 const App = () => {
+	const isMobile = useMediaQuery()
 	return (
 		<BrowserRouter>
 			<div className="relative z-0 bg-primary">
@@ -32,7 +34,7 @@ const App = () => {
 					</div>
 				</div>
 			</div>
-		<Cursor />
+			{isMobile ? null : <Cursor />}
 		</BrowserRouter>
 	)
 }

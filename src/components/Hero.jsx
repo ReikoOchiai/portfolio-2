@@ -3,11 +3,12 @@ import { motion } from 'framer-motion'
 import { ComputersCanvas } from './canvas'
 import { styles } from '../styles'
 import { useTranslation } from 'react-i18next'
-import useMediaQuery  from './customHooks/useMediaQuery'
+import useMediaQuery from './customHooks/useMediaQuery'
+import { fadeIn } from '../utils/motion'
 
 function Hero() {
 	const { t } = useTranslation()
-	const isMobile  = useMediaQuery()
+	const isMobile = useMediaQuery()
 
 	return (
 		<section className="relative w-full h-screen mx-auto">
@@ -19,16 +20,16 @@ function Hero() {
 					<div className="w-1 sm:h-80 h-40 violet-gradient" />
 				</div>
 				<div>
-					<h1 className={`${styles.heroHeadText} text-white relative`}>
-						Hi, I'm <span className="text-[#915eff]">Reiko</span>
-					</h1>
+						<h1 className={`${styles.heroHeadText} text-white relative`}>
+							Hi, I'm <span className="text-[#915eff]">Reiko</span>
+						</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
 						Front-end developer and <br className="sm:block hidden" />
-						UI/UX designer
+						UI/UX designer 👋
 					</p>
 				</div>
 			</div>
-			<ComputersCanvas />
+			{isMobile ? null : <ComputersCanvas />}
 			<div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
 				<a href="#about">
 					<div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">

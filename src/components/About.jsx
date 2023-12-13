@@ -33,13 +33,7 @@ function About() {
 			<motion.p
 				variants={fadeIn('', '', 0.1, 1)}
 				className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-				Skilled and highly motivated Software Engineer. A quick learner who is
-				always eager to learn new technologies and strives to exceed customer's
-				expectation for excellence. Proficient in front-end software development
-				technologies which covers Typescript, React, REST API and Node.js. With
-				a focus on writing clean, efficient code, as well as a keen desire to
-				improve and develop new skills, excellent attention to detail and a high
-				level of accuracy.
+				Passionate and driven Frontend Developer with a knack for quickly adapting to new technologies. Always eager to learn and dedicated to surpassing customer expectations with excellence. Skilled in front-end development technologies, including Typescript, React, REST API, and Node.js. Committed to writing clean, efficient code, and enthusiastic about continual skill improvement. Possesses excellent attention to detail and maintains a high level of accuracy in all endeavors.
 			</motion.p>
 			<div className="mt-20 flex flex-wrap gap-10">
 				{services.map((service, index) => (
