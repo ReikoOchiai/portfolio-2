@@ -63,7 +63,7 @@ function Hero() {
 			</div>
 			<div className="sliderContainer">
 				<div ref={slider} className="slider">
-					<p ref={firstText} >Creative Front-end developer -</p>
+					<p ref={firstText}>Creative Front-end developer -</p>
 					<p ref={secondText}>Creative Front-end developer -</p>
 				</div>
 			</div>
