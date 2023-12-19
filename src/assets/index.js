@@ -32,6 +32,9 @@ import tripguide from './tripguide.png'
 import netflix from './netflix.png'
 import uiux from './UIUX.png'
 import galaxy from './Galaxy-generator.png'
+import awwwards from './awwwards.png'
+import firstPortfolio from './firstPortfolio.png'
+import hauntedHouse from './hauntedHouse.png'
 export {
 	logo,
 	backend,
@@ -65,4 +68,7 @@ export {
 	netflix,
 	uiux,
 	galaxy,
+	awwwards,
+	firstPortfolio,
+	hauntedHouse,
 }

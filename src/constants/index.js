@@ -22,6 +22,9 @@ import {
 	netflix,
 	uiux,
 	galaxy,
+	awwwards,
+	firstPortfolio,
+	hauntedHouse,
 } from '../assets'
 
 export const navLinks = [
@@ -110,7 +113,7 @@ const experiences = [
 		date: 'Jul 2022 - Present',
 		points: [
 			'Developed and maintained two concurrent applications, one for consumers and one for retailers, using React.js and TypeScript, ensuring a seamless and consistent user experience.',
-			'Collaborated closely with backend developers to troubleshoot and help resolve backend-related issues, demonstrating strong communication and problem-solving skills to enhance the overall application performance.',
+			'Collaborated with other developers to troubleshoot and help resolve performance issues, demonstrating strong communication and problem-solving skills to enhance the overall application performance.',
 			'Implementing responsive design and ensuring cross-browser compatibility.',
 			'Worked closely with product managers and stakeholders to align development efforts with business goals, ensuring that each feature delivered met user and business requirements.',
 			'Conducted thorough code reviews and implemented best practices in React and TypeScript, eliminating any performance issue and ensuring consistency across the applications.',
@@ -157,6 +160,28 @@ const experiences = [
 ]
 
 const projects = [
+	{
+		name: 'Awwwards website clone',
+		description:
+			'Recreated with original twist of awwwards winning website by Dennis Snellenberg with Next.js, GSAP and Framer motion.',
+		tags: [
+			{
+				name: 'Next.js',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'GSAP',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'Framer Motion',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: awwwards,
+		source_code_link: 'https://github.com/ReikoOchiai/awwwards-website-clone',
+		url: 'https://awwwards-website-clone-eta.vercel.app/',
+	},
 	{
 		name: 'Netflix',
 		description:
@@ -220,6 +245,53 @@ const projects = [
 		image: galaxy,
 		source_code_link: 'https://github.com/ReikoOchiai/Galaxy-generator',
 		url: 'https://galaxy-generator-one.vercel.app/',
+	},
+	{
+		name: '3D Haunted house',
+		description: '3D rendered haunted house, you can adjust lighting locations and intensity',
+		tags: [
+			{
+				name: 'Three.js',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'HTML',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'CSS',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: hauntedHouse,
+		source_code_link: 'https://github.com/ReikoOchiai/haunted-house-3d',
+		url: 'https://haunted-house-tau.vercel.app/',
+	},
+	{
+		name: 'First portfolio',
+		description:
+			'My very first portfolio made with simple HTML, Javascript, Bootstrap and CSS',
+		tags: [
+			{
+				name: 'Javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'HTML',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'CSS',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'Bootstrap',
+				color: 'green-text-gradient',
+			},
+		],
+		image: firstPortfolio,
+		source_code_link: 'https://github.com/ReikoOchiai/PortfolioWebsite',
+		url: 'https://findreiko-ochiai.web.app/',
 	},
 ]
 
