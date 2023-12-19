@@ -57,7 +57,7 @@ function Hero() {
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
 						Front-end developer and <br className="sm:block hidden" />
-						UI/UX designer 👋
+						UI/UX designer
 					</p>
 				</div>
 			</div>
