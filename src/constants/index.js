@@ -114,7 +114,7 @@ const experiences = [
 		points: [
 			'Developed and maintained two concurrent applications, one for consumers and one for retailers, using React.js and TypeScript, ensuring a seamless and consistent user experience.',
 			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Worked closely with product managers and stakeholders to align development efforts with business goals, ensuring that each feature delivered met user and business requirements.',
+			'Worked closely with product manager and stakeholders to align development efforts with business goals, ensuring that each feature delivered met user and business requirements.',
 			'Thorough code reviews and implemented best practices in React and TypeScript, eliminating any performance issue and ensuring consistency across the applications.',
 		],
 	},
