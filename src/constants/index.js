@@ -163,7 +163,7 @@ const projects = [
 	{
 		name: 'Awwwards website clone',
 		description:
-			'Recreated with original twist of awwwards winning website by Dennis Snellenberg with Next.js, GSAP and Framer motion.',
+			'Currently working on building clone of awwwards winning website by Dennis Snellenberg with Next.js, GSAP and Framer motion.',
 		tags: [
 			{
 				name: 'Next.js',
