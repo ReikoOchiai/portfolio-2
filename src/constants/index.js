@@ -180,7 +180,7 @@ const projects = [
 		],
 		image: awwwards,
 		source_code_link: 'https://github.com/ReikoOchiai/awwwards-website-clone',
-		url: 'https://awwwards-website-clone-eta.vercel.app/',
+		url: 'https://awwwards-website-clone-reikoochiai.vercel.app/',
 	},
 	{
 		name: 'Netflix',
@@ -248,7 +248,8 @@ const projects = [
 	},
 	{
 		name: '3D Haunted house',
-		description: '3D rendered haunted house, you can adjust lighting locations and intensity',
+		description:
+			'3D rendered haunted house, you can adjust lighting locations and intensity',
 		tags: [
 			{
 				name: 'Three.js',
