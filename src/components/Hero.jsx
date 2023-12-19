@@ -45,7 +45,7 @@ function Hero() {
 	return (
 		<section className="relative flex overflow-hidden">
 			{' '}
-			<img src={bgImage} alt="Background image" className="object-fit min-h-[100vh]" />
+			<img src={bgImage} alt="Background image" className="object-cover min-h-[100vh]" />
 			<div
 				className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl max-auto flex flex-row items-start gap-5`}>
 				<div className="flex flex-col justify-center items-center mt-5">
