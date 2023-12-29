@@ -33,11 +33,16 @@ function About() {
 			<motion.p
 				variants={fadeIn('', '', 0.1, 1)}
 				className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-				Enthusiastic Frontend Developer with a flair for adapting to new tech.
-				Keen on learning and exceeding customer expectations. Proficient in
-				TypeScript, React.js, REST API, and Node.js. I love writing clean code and
-				constantly improving my skills, with a strong focus on precision and
-				accuracy in everything I do.
+				Enthusiastic Frontend Developer with a flair for adapting to new
+				technologies. I am keen on continuous learning and exceeding customer
+				expectations. Proficient in TypeScript, React.js, REST API and Node.js.
+				I have a passion for working with 3D objects and creating interactive
+				websites. Committed to writing concise and clean code to improve my
+				skills and maintaining accuracy in everything I do.
+				<br />
+				<br />
+				Currently working for startup company - Booop as a Frontend developer to build
+				and maintain self-checkout web application and dashboard for retailers.
 			</motion.p>
 			<div className="mt-20 flex flex-wrap gap-10">
 				{services.map((service, index) => (
