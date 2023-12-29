@@ -20,7 +20,8 @@ import reactjs from './tech/reactjs.png'
 import redux from './tech/redux.png'
 import tailwind from './tech/tailwind.png'
 import typescript from './tech/typescript.png'
-import threejs from './tech/threejs.svg'
+import threejs from './tech/ThreeJS.png'
+import GSAPIcon from './tech/gsapLogo.webp'
 
 import daiwa from './company/daiwa.png'
 import shopify from './company/shopify.png'
@@ -71,4 +72,5 @@ export {
 	awwwards,
 	firstPortfolio,
 	hauntedHouse,
+	GSAPIcon,
 }

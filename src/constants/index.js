@@ -25,6 +25,7 @@ import {
 	awwwards,
 	firstPortfolio,
 	hauntedHouse,
+	GSAPIcon,
 } from '../assets'
 
 export const navLinks = [
@@ -81,6 +82,10 @@ const technologies = [
 	{
 		name: 'Tailwind CSS',
 		icon: tailwind,
+	},
+	{
+		name: 'GSAP',
+		icon: GSAPIcon,
 	},
 	{
 		name: 'Node JS',
