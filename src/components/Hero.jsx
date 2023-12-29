@@ -2,7 +2,10 @@ import { useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 
-import bgImage from '/src/assets/herobg.png'
+import light from '/src/assets/bg-img-one-light.png'
+import bgBigBoxes from '/src/assets/bg-img-boxes.png'
+import bgBoxes from '/src/assets/bg-img-without-lights.png'
+import bgLights from '/src/assets/bg-img-without-boxes.png'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 
@@ -27,6 +30,13 @@ function Hero() {
 			},
 			x: '-=300px',
 		})
+		gsap.to('.parallax-bg', {
+			scrollTrigger: {
+				scrub: true,
+			},
+			y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
+			ease: 'none',
+		})
 		requestAnimationFrame(animate)
 	}, [])
 
@@ -45,7 +55,33 @@ function Hero() {
 	return (
 		<section className="relative flex overflow-hidden">
 			{' '}
-			<img src={bgImage} alt="Background image" className="object-cover min-h-[100vh]" />
+			<div className="min-h-[100vh]">
+				<img
+					src={bgBigBoxes}
+					alt="Background big boxes"
+					className="parallax-bg absolute left-[20%] top-[220px]"
+					data-speed=".65"
+				/>
+				<img
+					src={bgLights}
+					alt="Background lights"
+					className="parallax-bg absolute left-[30%] top-[100px]"
+					data-speed=".35"
+				/>
+
+				<img
+					src={bgBoxes}
+					alt="Background small boxes"
+					className="parallax-bg absolute left-[35%] top-[300px]"
+					data-speed=".65"
+				/>
+				<img
+					src={light}
+					alt="Background lights"
+					className="parallax-bg absolute left-[40%] top-[220px]"
+					data-speed=".35"
+				/>
+			</div>
 			<div
 				className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl max-auto flex flex-row items-start gap-5`}>
 				<div className="flex flex-col justify-center items-center mt-5">
