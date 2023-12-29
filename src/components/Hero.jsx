@@ -65,7 +65,7 @@ function Hero() {
 				<img
 					src={bgLights}
 					alt="Background lights"
-					className="parallax-bg absolute left-[30%] top-[100px]"
+					className="parallax-bg absolute left-[30%] top-[110px] opacity-7"
 					data-speed=".35"
 				/>
 
