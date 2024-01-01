@@ -66,13 +66,13 @@ const Works = () => {
 				<p className={styles.sectionSubText}>My work</p>
 				<h2 className={styles.sectionHeadText}>Projects.</h2>
 			</motion.div>
-			<motion.div variants={fadeIn('', '', 0.1, 1)}>
-				<p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-					Following projects showcases my skills and experience through
-					real-world examples of my work. Currently working on new project in my
-					spare time which cannot wait to share!
-				</p>
-			</motion.div>
+
+			<p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+				Following projects showcases my skills and experience through real-world
+				examples of my work. Currently working on new project in my spare time
+				which cannot wait to share!
+			</p>
+
 			<div className="mt-20 flex flex-wrap gap-7">
 				{projects.map((project, index) => (
 					<div key={index}>
