@@ -20,7 +20,7 @@
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-i18next": "^13.0.2",
-		"react-parallax-tilt": "^1.7.137",
+		"react-parallax-tilt": "^1.7.180",
 		"react-router-dom": "^6.9.0",
 		"react-vertical-timeline-component": "^3.6.0",
 		"three": "^0.150.1"
