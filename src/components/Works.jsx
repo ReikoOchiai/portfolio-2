@@ -16,7 +16,9 @@ const ProjectCard = ({
 	url,
 }) => {
 	return (
-		<div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+		<motion.div
+			variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
+			className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
 			<div
 				className="relative w-full h-[230px] cursor-pointer"
 				onClick={() => {
@@ -53,7 +55,7 @@ const ProjectCard = ({
 					</p>
 				))}
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 
