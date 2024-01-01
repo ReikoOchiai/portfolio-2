@@ -13,10 +13,11 @@ export const textVariant = (delay) => {
 				delay: delay,
 			},
 		},
-	};
-};
+	}
+}
 
 export const fadeIn = (direction, type, delay, duration) => {
+	console.log(direction, type, delay, duration)
 	return {
 		hidden: {
 			x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
@@ -34,8 +35,8 @@ export const fadeIn = (direction, type, delay, duration) => {
 				ease: 'easeOut',
 			},
 		},
-	};
-};
+	}
+}
 
 export const zoomIn = (delay, duration) => {
 	return {
@@ -53,8 +54,8 @@ export const zoomIn = (delay, duration) => {
 				ease: 'easeOut',
 			},
 		},
-	};
-};
+	}
+}
 
 export const slideIn = (direction, type, delay, duration) => {
 	return {
@@ -72,8 +73,8 @@ export const slideIn = (direction, type, delay, duration) => {
 				ease: 'easeOut',
 			},
 		},
-	};
-};
+	}
+}
 
 export const staggerContainer = (staggerChildren, delayChildren) => {
 	return {
@@ -84,5 +85,5 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
 				delayChildren: delayChildren || 0,
 			},
 		},
-	};
-};
+	}
+}
