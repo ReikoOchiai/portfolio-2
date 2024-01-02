@@ -32,7 +32,7 @@ function Navbar() {
 					/>
 					<p className="text-white text-[18px] front-bold cursor-pointer flex">
 						<span className="sm:block hidden">
-							Reiko&nbsp;| Frontend Engineer{' '}
+							Reiko&nbsp;| Frontend Developer{' '}
 						</span>
 					</p>
 				</Link>
