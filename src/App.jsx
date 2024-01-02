@@ -8,12 +8,12 @@ const App = () => {
 	const isMobile = useMediaQuery()
 	return (
 		<BrowserRouter>
-			<AnimatePresence mode="wait">
+			<AnimatePresence>
 				<Hero key="home" />
 				<About key="about" />
 				<Tech key="tech" />
 				<Works key="works" />
-				<div className="relative z-0 bg-primary">
+				<div className="relative bg-primary">
 					<Contact key="contact" />
 					<div className="text-[12px] text-center pb-4">
 						&copy; 2023 Reiko Ochiai

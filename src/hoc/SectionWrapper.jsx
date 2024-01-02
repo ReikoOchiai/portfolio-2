@@ -19,9 +19,9 @@ const SectionWrapper = (Component, idName) =>
 			}
 		}
 
-		const nbOfColumns = 8
+		const nbOfColumns = 5
 		return (
-			<div className="relative z-0 bg-primary">
+			<div className="relative bg-primary">
 				<Navbar />
 				<div className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
 					<div className="stairs">

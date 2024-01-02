@@ -49,7 +49,7 @@
 
 .sliderContainer {
 	position: absolute;
-	top: calc(100vh - 350px);
+	top: calc(100vh - 300px);
 }
 
 .slider {
