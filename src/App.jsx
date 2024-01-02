@@ -13,7 +13,7 @@ const App = () => {
 				<About key="about" />
 				<Tech key="tech" />
 				<Works key="works" />
-				<div className="relative z-0">
+				<div className="relative z-0 bg-primary">
 					<Contact key="contact" />
 					<div className="text-[12px] text-center pb-4">
 						&copy; 2023 Reiko Ochiai
