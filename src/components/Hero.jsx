@@ -53,7 +53,7 @@ function Hero() {
 	}
 
 	return (
-		<section className="relative flex overflow-hidden">
+		<section className="relative flex overflow-hidden bg-primary z-0">
 			{' '}
 			<div className="min-h-[100vh]">
 				<img
