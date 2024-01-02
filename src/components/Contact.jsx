@@ -27,7 +27,7 @@ function Contact() {
 							navigator.clipboard.writeText('reiko.ochiai05@gmail.com')
 							setTooltip(!tooltip)
 						}}
-						className="py-2 outline-none w-fit text-white font-medium flex items-center gap-4">
+						className="py-2 outline-none w-fit text-white font-medium flex items-center">
 						<h6>reiko.ochiai05@gmail.com</h6>
 						<span className="transition-all text-xs text-white-100 group-hover:scale-100 z-10 ease-out duration-300 px-2">
 							{tooltip ? 'Copied!' : null}
