@@ -26,6 +26,7 @@ import {
 	firstPortfolio,
 	hauntedHouse,
 	GSAPIcon,
+	solarsystem,
 } from '../assets'
 
 export const navLinks = [
@@ -164,6 +165,27 @@ const experiences = [
 ]
 
 const projects = [
+	{
+		name: 'Solar system with Three.js',
+		description: 'Solar system created with Three.js',
+		tags: [
+			{
+				name: 'Javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'HTML',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'Three.js',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: solarsystem,
+		source_code_link: 'https://github.com/ReikoOchiai/solarsystem/tree/main',
+		url: 'https://solarsystem-mu.vercel.app/',
+	},
 	{
 		name: 'Awwwards website clone',
 		description:

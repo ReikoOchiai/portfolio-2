@@ -36,6 +36,7 @@ import galaxy from './Galaxy-generator.png'
 import awwwards from './awwwards.png'
 import firstPortfolio from './firstPortfolio.png'
 import hauntedHouse from './hauntedHouse.png'
+import solarsystem from './solarsystem.png'
 export {
 	logo,
 	backend,
@@ -73,4 +74,5 @@ export {
 	firstPortfolio,
 	hauntedHouse,
 	GSAPIcon,
+	solarsystem,
 }
