@@ -1,6 +1,3 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-
 import { styles } from '../styles'
 import { opacity, expand } from '../utils/motion'
 import { Navbar } from '../components'
@@ -19,12 +16,13 @@ const SectionWrapper = (Component, idName) =>
 				variants,
 			}
 		}
-
 		const nbOfColumns = 1
+
 		return (
 			<div className="relative bg-primary">
 				<Navbar />
-				<div className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
+				<div
+					className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
 					<span className="hash-span" id={idName}>
 						&nbsp;
 					</span>
