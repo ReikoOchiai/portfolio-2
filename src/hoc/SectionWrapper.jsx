@@ -9,6 +9,7 @@ import { Navbar } from '../components'
 
 const SectionWrapper = (Component, idName) =>
 	function HOC() {
+		const words = ['Hello', 'こんにちは', 'Ciao', 'Hallo', '你好']
 		const anim = (variants, custom = null) => {
 			return {
 				initial: 'initial',
@@ -19,23 +20,15 @@ const SectionWrapper = (Component, idName) =>
 			}
 		}
 
-		const nbOfColumns = 5
+		const nbOfColumns = 1
 		return (
 			<div className="relative bg-primary">
 				<Navbar />
 				<div className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
-					<div className="stairs">
-						<motion.div {...anim(opacity)} className="transition-background" />
-						<div className="transition-container">
-							{[...Array(nbOfColumns)].map((_, i) => {
-								return <motion.div key={i} {...anim(expand, i)} />
-							})}
-						</div>
-						<span className="hash-span" id={idName}>
-							&nbsp;
-						</span>
-						<Component />
-					</div>
+					<span className="hash-span" id={idName}>
+						&nbsp;
+					</span>
+					<Component />
 				</div>
 			</div>
 		)

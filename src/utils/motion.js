@@ -94,8 +94,8 @@ export const expand = {
 	enter: (i) => ({
 		top: '100vh',
 		transition: {
-			duration: 0.6,
-			delay: 0.20 * i,
+			duration: 1,
+			delay: 0.2 * i,
 			ease: [0.85, 0, 0.15, 1],
 		},
 		transitionEnd: { height: '0', top: '0' },
@@ -109,14 +109,37 @@ export const expand = {
 		},
 	}),
 }
+
 export const opacity = {
 	initial: {
-		opacity: 0.5,
-	},
-	enter: {
 		opacity: 0,
 	},
-	exit: {
+	enter: (i) => ({
 		opacity: 0.5,
-	},
+		transition: {
+			duration: 0.6,
+			delay: 0.2 * i,
+			// ease: [0.85, 0, 0.15, 1],
+		},
+	}),
+	exit: (i) => ({
+		opacity: 0,
+		transition: {
+			duration: 0.2,
+			delay: 0.01 * i,
+			// ease: [0.85, 0, 0.15, 1],
+		},
+	}),
 }
+// export const opacity1 = {
+// 	initial: {
+// 		opacity: 0,
+// 	},
+// 	enter: {
+// 		opacity: 0.5,
+// 	},
+// 	exit: {
+// 		opacity: 1,
+// 	},
+// }
+

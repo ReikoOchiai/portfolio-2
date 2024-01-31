@@ -29,18 +29,27 @@
 	position: relative;
 	height: 100%;
 	width: 100%;
-	background-color: #f3f3f3;
+	background-color: #070705d9;
 }
+
+/* 
 .stairs > .transition-background {
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background-color: #f3f3f3;
+	background-color: #070705b7;
 	pointer-events: none;
 	top: 0;
 	left: 0;
-}
+} */
 
+.stairs > .transition-container > h1 {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -40%);
+	font-size: clamp(40px, 24vw, 50px);;
+}
 .hash-span {
 	margin-top: -100px;
 	padding-bottom: 100px;
