@@ -40,7 +40,7 @@ function About() {
 				comprehensible and accessible for other developers.
 				<br />
 				<br />
-				Currently working for startup company - Booop as a Frontend developer to
+				Currently working for startup company - Booop as a Software developer to
 				build and maintain self-checkout web application and dashboard for
 				retailers.
 			</motion.p>

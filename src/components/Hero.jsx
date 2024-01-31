@@ -92,15 +92,15 @@ function Hero() {
 						Hi, I'm <span className="text-[#915eff]">Reiko</span>
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
-						Front-end developer and <br className="sm:block hidden" />
+						Software developer and <br className="sm:block hidden" />
 						UI/UX designer
 					</p>
 				</div>
 			</div>
 			<div className="sliderContainer">
 				<div ref={slider} className="slider">
-					<p ref={firstText}>Creative Front-end developer -</p>
-					<p ref={secondText}>Creative Front-end developer -</p>
+					<p ref={firstText}>Creative developer -</p>
+					<p ref={secondText}>Creative developer -</p>
 				</div>
 			</div>
 			<div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

@@ -61,7 +61,7 @@
 	position: relative;
 	margin: 0px;
 	color: white;
-	font-size: clamp(70px, 24vw, 230px);
+	font-size: clamp(40px, 24vw, 230px);
 	font-weight: 500;
 	padding-right: 50px;
 }
