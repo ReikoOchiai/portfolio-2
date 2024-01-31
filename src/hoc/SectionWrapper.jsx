@@ -6,7 +6,6 @@ import { Navbar } from '../components'
 
 const SectionWrapper = (Component, idName) =>
 	function HOC() {
-		const words = ['Hello', 'こんにちは', 'Ciao', 'Hallo', '你好']
 		const anim = (variants, custom = null) => {
 			return {
 				initial: 'initial',
@@ -16,13 +15,12 @@ const SectionWrapper = (Component, idName) =>
 				variants,
 			}
 		}
-		const nbOfColumns = 1
 
+		const nbOfColumns = 1
 		return (
 			<div className="relative bg-primary">
 				<Navbar />
-				<div
-					className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
+				<div className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
 					<span className="hash-span" id={idName}>
 						&nbsp;
 					</span>

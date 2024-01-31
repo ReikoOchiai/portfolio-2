@@ -44,8 +44,8 @@ const App = () => {
 
 	return (
 		<BrowserRouter>
-			<div style={{ height: contentHeight }} />
-			<motion.div className="scrollBody" ref={contentRef} style={{ y }}>
+			{/* <div style={{ height: contentHeight }} />
+			<motion.div className="scrollBody" ref={contentRef} style={{ y }}> */}
 				<Hero key="home" />
 				<About key="about" />
 				<Tech key="tech" />
@@ -56,7 +56,7 @@ const App = () => {
 						&copy; 2024 Reiko Ochiai
 					</div>
 				</div>
-			</motion.div>
+			{/* </motion.div> */}
 			{isMobile ? null : <Cursor />}
 		</BrowserRouter>
 	)
